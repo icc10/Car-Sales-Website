@@ -9,46 +9,48 @@
 </head>
 
 <body>
-	<div id="titleDiv">
+	<div id="header">
 		<h1 id="title">Car Dealer App</h1>
+		<img id="profileImg" class ="headImg" src="images/profileImage.png">
+		<img id="logImg" class="headImg" src="images/logOut.png">
+
 	</div>
+	<hr>
 	<div id="container">
 
-		<ul id="col1">
-			<li id="carType">
-				<p class="details">Car Type</p>
+		<div id="col1">
+			<div id="leftOptions">
+				<label for="menuCars" class="details">Car Type</label>
 				<select name="menuCars" id="menuCars">
 					<option value="ferrari">Ferrari</option>
 					<option value="lamborghini">Lamborghini</option>
 					<option value="mustang">Mustang</option>
 				</select>
-			</li>
-	
-			<li id="carColor">
-				<p class="details">Car Color</p>
+
+				<label for="menuColors" class="details">Car Color</label>
 				<select name="menuColors" id="menuColors">
 					<option id="opt1" value="Red">Red</option>
 					<option id="opt2" value="White">White</option>
 					<option id="opt3" value="Yellow">Yellow</option>
 				</select>
-			</li>
 
-			<li id="insuranceOptions">
-				<p class="details">Insurance Plan</p>
+
+
+				<label for="noInsurance" class="details">Insurance Plan</label>
 				<input type="radio" id="noInsurance" name="insuranceOpt" value="noInsurance">
-				<label for="noInsurance">No Insurance</label><br>
+				<p class="buttonDesc" for="noInsurance">No Insurance</p><br>
 				<input type="radio" id="3Year" name="insuranceOpt" value="3Year" checked = "checked">
-				<label for="3Year">Three Year Insurance</label><br>
-			</li>
-			
+				<p class="buttonDesc" for="3Year">Three Year Insurance</p><br>
+			</div>
+		</div>
 
-		</ul>
-		<ul id = "col2">
-			<li id="carPic">
+		<div id="col2">
+			<div id="carPic">
 				<img id="pic" src="images/redFerrari.jpg" alt="">
-			</li>
+			</div>
+			<hr>
 
-			<li id="desc">
+			<div id="desc">
 				<p id="descLabel">Description</p>
 				<textarea type="text" id="description">
 Car: Ferrari
@@ -57,8 +59,8 @@ Selected color: Red
 Basic Price: 100,000
 Insurance: 30,000
         		</textarea>
-			</li>
-		</ul>
+			</div>
+		</div>
 
 
 	</div>
